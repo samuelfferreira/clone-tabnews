@@ -1,2 +1,5 @@
+.git
 .next
 .idea
+.swc
+node_modules
