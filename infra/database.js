@@ -5,7 +5,7 @@ async function query(queryObject) {
 
   try {
     client = await getNewClient();
-    var result = await client.query(queryObject);
+    let result = await client.query(queryObject);
     return result;
   } catch (error) {
     console.error(error);
