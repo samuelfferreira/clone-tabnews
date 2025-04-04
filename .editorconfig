@@ -1,5 +1,5 @@
-root = true
+root = true #significa que todo mundo abaixo desse diretorio vao receber as configuracoes
 
-[*]
-indent_style = space
-indent_size = 2
+[*] #todos os arquivos
+indent_style = space #usar sempre o caracter espaço
+indent_size = 2 #tamanho da identacao
