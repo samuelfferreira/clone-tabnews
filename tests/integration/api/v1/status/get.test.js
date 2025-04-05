@@ -22,13 +22,3 @@ test("GET to /api/v1/status should return 200", async () => {
   expect(responseBody.dependencies.database.opened_connections).toBeDefined();
   expect(responseBody.dependencies.database.opened_connections).toEqual(1);
 });
-
-// test.only("Teste sql injection", async () => {
-//   // const response = await fetch(
-//   //   "http://localhost:3001/api/v1/status?databaseName=local_db",
-//   // );
-
-//   const response = await fetch(
-//     "http://localhost:3001/api/v1/status?databaseName='; select pg_sleep(4); --",
-//   );
-// });

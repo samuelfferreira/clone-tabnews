@@ -1,6 +1,6 @@
 import migrationRunner from "node-pg-migrate";
 import { join } from "node:path";
-import database from "/infra/database.js";
+import database from "infra/database.js";
 import { error } from "node:console";
 
 export default async function migrations(request, response) {
@@ -48,5 +48,5 @@ export default async function migrations(request, response) {
   }
 }
 
-//Dry Run
-//Live run
+//Dry Run (Simulação) -> executar de mentira
+//Live run ->

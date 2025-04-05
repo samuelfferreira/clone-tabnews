@@ -21,6 +21,10 @@ export default {
   getNewClient,
 };
 
+// async function cleanDatabase() {
+//   await database.query("drop schema public cascade; create schema public;");
+// }
+
 function getSSLValues() {
   if (process.env.POSTGRES_CA) {
     return {
