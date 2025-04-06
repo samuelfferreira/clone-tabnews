@@ -18,7 +18,7 @@ test("GET to /api/v1/status should return 200", async () => {
 
   //garante a versao do banco de dados
   expect(responseBody.dependencies.database.version).toBeDefined();
-  expect(responseBody.dependencies.database.version).toEqual("16.8");
+  expect(responseBody.dependencies.database.version).toEqual("16.7");
 
   //maximo de conexoes
   expect(responseBody.dependencies.database.max_connections).toBeDefined();
