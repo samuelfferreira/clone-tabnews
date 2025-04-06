@@ -8,7 +8,7 @@
     "start:dev": "npm run services:up && next dev",
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
-    "test": "npm run services:up && concurrently -n next,jest --hide next -k --s command-jest 'next dev' 'jest --runInBand --verbose'",
+    "test": "npm run services:up && concurrently -n next,jest --hide next -k --s command-jest \"next dev\" \"jest --runInBand --verbose\"",
     "test:watch": "jest --watchAll --runInBand",
     "services:up": "docker compose -f ./infra/compose.yml up -d",
     "services:down": "docker compose -f ./infra/compose.yml down",
