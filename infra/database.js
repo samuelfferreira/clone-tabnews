@@ -16,14 +16,12 @@ async function query(queryObject) {
   }
 }
 
-export default {
+const database = {
   query,
   getNewClient,
 };
 
-// async function cleanDatabase() {
-//   await database.query("drop schema public cascade; create schema public;");
-// }
+export default database;
 
 function getSSLValues() {
   if (process.env.POSTGRES_CA) {
