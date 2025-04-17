@@ -1,6 +1,14 @@
 import database from "infra/database";
+import { createRouter } from "next-connect";
+import controller from "infra/controller";
 
-async function status(request, response) {
+const router = createRouter();
+
+router.get(getHandler);
+
+export default router.handler(controller.errorHandlers);
+
+async function getHandler(request, response) {
   const databaseVersionResult = await database.query("show server_version;");
 
   const updatedAt = new Date().toISOString();
@@ -34,5 +42,3 @@ async function status(request, response) {
     },
   });
 }
-
-export default status;
