@@ -1,6 +1,3 @@
-import migrationRunner from "node-pg-migrate";
-// import { resolve } from "node:path";
-import database from "infra/database.js";
 import { createRouter } from "next-connect";
 import controller from "infra/controller";
 import migrator from "models/migrator";
